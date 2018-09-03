@@ -21,12 +21,6 @@ func main() {
     p()
     p("Len: ", len("hello"))
     p("Char:", "hello"[1])
-
-    str := "Go is a beautiful language"
-    p("The length of str is: %d\n",len(str))
-    for pos,char:= range str {
-        p("Character on position")
-    }
 }
 
 /*
