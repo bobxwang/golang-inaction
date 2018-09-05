@@ -6,6 +6,8 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 )
 
+// import with _: 只导入副作用，也就是说，只执行它的init函数并初始化其中的全局变量 
+
 func main() {
 	db, err := sql.Open("mysql", "root:fuck51test@tcp(127.0.0.1:3306)/test")
 	if err != nil {
