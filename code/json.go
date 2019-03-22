@@ -10,16 +10,16 @@ type Response1 struct {
 }
 
 type Response2 struct {
-	Page int `json:"page"`
+    Page int `json:"page"`
     Fruits []string `json:"fruits"`
 }
 
 func main() {
 
-	// 以下是基本数据类型到JSON字符串的编码过程 
-	bolB, _ := json.Marshal(true)
-	fmt.Println(string(bolB))
-	intB, _ := json.Marshal(1)
+    // 以下是基本数据类型到JSON字符串的编码过程 
+    bolB, _ := json.Marshal(true)
+    fmt.Println(string(bolB))
+    intB, _ := json.Marshal(1)
     fmt.Println(string(intB))
     fltB, _ := json.Marshal(2.34)
     fmt.Println(string(fltB))
