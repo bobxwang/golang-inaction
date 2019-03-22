@@ -24,11 +24,13 @@ package main
 import (
 	"fmt"
   	"sync"
+	"runtime"
 )
 
 var wg sync.WaitGroup
 
 func Afunction(shownum int) {
+        runtime.Gosched() // 表示让CPU把时间片让给别人,下次某个时候继续恢复执行该goroutine
   	fmt.Println(shownum)
    	wg.Done // 任务完成,将任务队列中的任务数量-1,其实.Done就是.Add(-1)
 }
