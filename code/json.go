@@ -5,8 +5,8 @@ import "fmt"
 import "os"
 
 type Response1 struct {
-	Page int
-	Fruits []string
+    Page int
+    Fruits []string
 }
 
 type Response2 struct {
